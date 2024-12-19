@@ -7,7 +7,9 @@
   --text-color: #f1b2ce;
   --title-text-color: #db00ff;
   --accent-color: #ff0070;
+  --accent-color-text: #000028;
   --background-color: #000028;
+  --header-button-hover-border-color: rgba(255, 0, 112, 0.4);
 
   --text-font: 'IBM Plex mono', sans-serif;
   --text-font-size: 18px;
@@ -15,4 +17,6 @@
 
   --title-font-size: 116px;
   --header-bg-image: url('../images/cover-image-dark.png');
+  --button-color: var(--accent-color, #ff0070);
+  --header-decoration-items-color: var(--accent-color, #ff0070);
 }
