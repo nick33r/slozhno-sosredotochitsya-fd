@@ -14,6 +14,10 @@
   background-attachment: fixed;
 }
 
+.title-decor {
+  background-color: var(--accent-color, #ff0070);
+}
+
 /* Header layout */
 
 .header {
@@ -124,7 +128,6 @@
 .header__subtitle-text {
   color: var(--accent-color-text, #000028);
   font-weight: 700;
-  background-color: var(--accent-color, #ff0070);
 }
 
 /* Main layout */
@@ -145,19 +148,25 @@
   font-weight: 700;
 }
 
-.content__section-subtitle {
-  margin-block-end: 10px;
-  color: var(--accent-color-text, #000028);
-  font-weight: 700;
-  background-color: var(--accent-color, #ff0070);
-}
-
+.content__section-subtitle,
 .textblock__title {
   margin-block-end: 10px;
   color: var(--accent-color-text, #000028);
-  background-color: var(--accent-color, #ff0070);
 }
 
-.textblock__text {
+.content__section--how .textblock__title {
+  font-weight: 400;
+}
 
+.textblock__link {
+  text-shadow: 2px 1px var(--accent-color, #ff0070);
+  text-decoration: none;
+}
+
+.textblock__link:hover {
+  border-bottom: 1px solid var(--text-color, #f1b2ce);
+}
+
+.textblock__link:focus-visible {
+  outline: 1px solid var(--text-color, #f1b2ce);
 }

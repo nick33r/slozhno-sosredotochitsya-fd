@@ -19,7 +19,7 @@
   --text-line-height: 1.3;
 
   /* Header styles */
-  --title-font-size: 116px;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --header-bg-image: url('../images/cover-image-dark.png');
   --button-color: var(--accent-color, #ff0070);
   --header-decoration-items-color: var(--accent-color, #ff0070);
