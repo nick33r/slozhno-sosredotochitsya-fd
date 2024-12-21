@@ -30,3 +30,14 @@
   --main-sections-gap: 50px;
   --gallery-item-gap: 10px;
 }
+
+/* ---------- Media queries ---------- */
+
+@media screen and (min-width: 768px) {
+  :root {
+    --padding-section: 20px;
+    --padding-section-main: 60px 20px;
+    --main-sections-gap: 80px;
+    --gallery-item-gap: 20px;
+  }
+}
