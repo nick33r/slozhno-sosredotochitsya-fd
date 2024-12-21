@@ -16,6 +16,7 @@
 
 .title-decor {
   background-color: var(--accent-color, #ff0070);
+  color: var(--accent-color-text, #000028);
 }
 
 /* ---------- Header layout ---------- */
@@ -150,10 +151,8 @@
   font-weight: 700;
 }
 
-.content__section-subtitle,
 .textblock__title {
   margin-block-end: 10px;
-  color: var(--accent-color-text, #000028);
 }
 
 .content__section--how .textblock__title {
