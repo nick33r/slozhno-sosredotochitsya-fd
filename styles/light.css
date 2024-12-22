@@ -1,8 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+/* ---------- light theme ---------- */
 
 :root.theme-light {
   --text-color: #353430;
@@ -10,11 +6,11 @@
   --accent-color: #ff8dcb;
   --accent-color-text: #353430;
   --background-color: #fff1f7;
+  --decoration-items-color: var(--text-color, #353430);
   --header-button-color: var(--text-color, #353430);
   --header-button-hover-border-color: rgba(50, 49, 45, 0.4);
-  --main-title-color: var(--text-color, #353430);
-  --header-decoration-items-color: var(--text-color, #353430);
   --header-bg-image: url('../images/cover-image-light.png');
+  --main-title-color: var(--text-color, #353430);
 }
 
 .theme-light .page .header__decoration-item {
