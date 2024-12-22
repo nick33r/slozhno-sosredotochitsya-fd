@@ -34,7 +34,6 @@
     --header-bg-image: url('../images/cover-image-light.png');
     --header-decoration-items-color: var(--text-color, #353430);
     --main-title-color: var(--text-color, #353430);
-    --footer-title-shadow-color: #ff0070;
   }
   
   .page .header__decoration-item {

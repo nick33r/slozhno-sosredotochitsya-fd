@@ -15,7 +15,6 @@
   --header-decoration-items-color: var(--accent-color, #ff0070);
   --header-bg-image: url('../images/cover-image-dark.png');
   --main-title-color: var(--accent-color, #ff0070);
-  --footer-title-shadow-color: #ff0070;
 
   /* Text styles */
   --text-font: 'IBM Plex mono', sans-serif;

@@ -15,7 +15,6 @@
   --header-decoration-items-color: var(--accent-color, #ff0070);
   --header-bg-image: url('../images/cover-image-dark.png');
   --main-title-color: var(--accent-color, #ff0070);
-  --footer-title-shadow-color: var(--accent-color, #ff0070);
 }
 
 .theme-dark .page .header__decoration-item {

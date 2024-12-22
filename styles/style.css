@@ -210,7 +210,7 @@
   color: var(--title-text-color, #db00ff);
   font-size: var(--title-font-size, 116px);
   line-height: 0.825;
-  text-shadow: 2px 2px var(--footer-title-shadow-color, #ff0070);
+  text-shadow: 2px 2px var(--accent-color, #ff0070);
 }
 
 .footer::before {
