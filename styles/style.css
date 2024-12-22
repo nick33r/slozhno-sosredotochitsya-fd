@@ -14,8 +14,8 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color, #ff0070);
   color: var(--accent-color-text, #000028);
+  background-color: var(--accent-color, #ff0070);
 }
 
 /* ---------- Header layout ---------- */
@@ -93,7 +93,7 @@
 .header__theme-menu-button {
   border: none;
   padding: 2px 13.5px 6px;
-  color: var(--button-color, #ff0070);
+  color: var(--header-button-color, #ff0070);
   line-height: 18px;
   text-transform: lowercase;
   background-color: transparent;
@@ -101,17 +101,18 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--button-color, #ff0070);
+  outline: 1px solid var(--header-button-color, #ff0070);
   outline-offset: -1px;
+  pointer-events: none;
 }
 
-.header__theme-menu-button:hover {
+.header__theme-menu-button:not([disabled]):hover {
   outline: 1px solid var(--header-button-hover-border-color, rgba(255, 0, 112, 0.4));
   outline-offset: -1px;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--button-color, #ff0070);
+  border-bottom: 1px solid var(--header-button-color, #ff0070);
   padding-bottom: 5px;
   outline: none;
 }
@@ -159,8 +160,8 @@
 }
 
 .textblock__link {
-  text-shadow: 2px 1px var(--accent-color, #ff0070);
   text-decoration: none;
+  text-shadow: 2px 1px var(--accent-color, #ff0070);
 }
 
 .textblock__link:hover {
@@ -172,8 +173,8 @@
 }
 
 .content__gallery-title {
-  color: var(--accent-color-text, #000028);
   margin-block-end: var(--gallery-item-gap, 10px);
+  color: var(--accent-color-text, #000028);
 }
 
 .content__gallery-images {
@@ -189,11 +190,11 @@
 /* ---------- Footer layout ---------- */
 
 .footer {
+  position: relative;
+  align-content: center;
   height: 100vh;
   min-height: 668px;
   padding: var(--padding-section, 10px);
-  position: relative;
-  align-content: center;
   text-align: center;
 }
 
@@ -209,7 +210,7 @@
   color: var(--title-text-color, #db00ff);
   font-size: var(--title-font-size, 116px);
   line-height: 0.825;
-  text-shadow: 4px 4px var(--accent-color, #ff0070);
+  text-shadow: 2px 2px var(--footer-title-shadow-color, #ff0070);
 }
 
 .footer::before {
