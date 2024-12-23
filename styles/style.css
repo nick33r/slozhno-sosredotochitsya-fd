@@ -151,12 +151,26 @@
   font-weight: 700;
 }
 
-.content__section-textblock :not(:last-child) {
+.content__section-textblock-container {
+  display: grid;
+  gap: 20px;
+}
+
+.content__section-textblock > :not(:last-child) {
+  margin-block-end: 10px;
+}
+
+.textblock__text > :not(:last-child) {
   margin-block-end: 10px;
 }
 
 .content__section--answer .textblock__title {
   font-weight: 400;
+}
+
+.content__section-answer-list {
+  display: grid;
+  gap: 20px;
 }
 
 .textblock__link {
@@ -232,30 +246,11 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .content__section-title {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-  }
-
-  .content__section-subtitle {
-    grid-column: 2;
-  }
-
-  .content__section-textblock {
-    grid-column: 2;
-  }
-
-  .content__section--question .content__section-title {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .content__section--question .content__section-textblock {
+  .content__section--question .content__section-textblock-container {
     grid-column: 1 / span 2;
   }
 
   .content__gallery-images {
-    grid-template: repeat(3, 1fr) / repeat(3, min(min-content, 1fr));
     grid-template-areas: 
     "img1 img1 img2"
     "img3 img4 img2"
@@ -302,16 +297,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .content__section-subtitle {
+  .content__section-textblock-container {
     grid-column: 2 / span 2;
   }
 
-  .content__section-textblock {
-    grid-column: 2 / span 2;
-  }
-
-  .content__section--question .content__section-textblock {
-    grid-column: initial;
-    grid-row: 2;
+  .content__section--question .content__section-textblock-container {
+    grid-column: 1 / span 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
